@@ -34,7 +34,7 @@ html, body{
 
 .downTextHolder{
   position :fixed;
-  width: 92.9%;
+  width: 88%;
   height: 19em;
   padding: 3em;
   background-color: white;
@@ -43,6 +43,23 @@ html, body{
   font-family:Alex Brush;
 }
 
+.happyBirthdayBottom{
+	position : absolute;
+	width: 105%;
+	width: 100vw;
+	height: 1.4em;
+	padding-top: 0.2em;
+	left: 0%;
+	right: 0%;
+	text-align: center;
+	align-items: center;
+	font-family: Alex Brush;
+	font-size: 3em;
+	bottom: 0;
+	color: darkorchid;
+	font-weight: bold;
+	background-color: goldenrod;
+}
 
 @keyframes typing {
     from { width: 100% }
