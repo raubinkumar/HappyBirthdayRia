@@ -45,7 +45,7 @@ html, body{
 
 .happyBirthdayBottom{
 	position : absolute;
-	width: 105%;
+	width: 100%;
 	width: 100vw;
 	height: 1.4em;
 	padding-top: 0.2em;
@@ -55,7 +55,7 @@ html, body{
 	align-items: center;
 	font-family: Alex Brush;
 	font-size: 3em;
-	bottom: 0;
+	bottom: 0%;
 	color: darkorchid;
 	font-weight: bold;
 	background-color: goldenrod;
