@@ -14,6 +14,7 @@
 				<div class='candles'></div>
 				<br/>
 			</div>
+			<div id = "counterContainer" class="counterRight"></div>
 			<div class= "bottomPanel">
 				<div class="iLoveYou">
 					I
@@ -24,11 +25,11 @@
 					you
 				</div>
 				<div class="createdWithLove">
-					Created by: raubin with lots of 
 					<svg class="heartSmall" viewBox="0 0 32 29.6">
 						<path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
 						c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
 					</svg>
+					Raubin
 				</div>
 			</div>
 		</div>
@@ -52,20 +53,36 @@
 		</div>
 	</body>
 	<script>
-		/*eslint-env jquery */
-		var timer = 10;
+		var timer = 11;
+		
+		var windowWidth = window.innerWidth;
+		var windowHeight = window.innerHeight
+		if(windowHeight > windowWidth)
+		{
+			$("#counterContainer").removeClass("counterRight");
+			$("#counterContainer").addClass("counterCenter");
+		}
 		$(document).ready(function(){
 			var timerVar = setInterval(function(){
 				timer--;
-				if(timer === 0){
+				$("#counterContainer").html(timer);
+				if(timer == 0){
 					$("#happyBirthdayContainer").remove();
 					$("#happyBirthdayCSS").remove();
 					$('head').append('<link href="Styles.css" rel="stylesheet" id="cardPageCss" />');
 					$('<script />', { type : 'text/javascript', src : "Handler.js"}).appendTo('head');
+					sleep(200);
 					$('#mainContainer').css({"display":"block","animation": "fadein 2s"});
 					clearTimeout(timerVar);
 				}
 			},1000);
-		});	
+		});
+		
+			// Function to delay
+			function sleep(miliseconds) {
+						var currentTime = new Date().getTime();
+						while (currentTime + miliseconds >= new Date().getTime()) {
+						}
+					}
 	</script>
 </html> 

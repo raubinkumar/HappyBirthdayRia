@@ -1,4 +1,4 @@
-@-webkit-keyframes flames {
+@-webkit-keyframes flames { /* csslint allow: fatal-error */
   0% {
     height: 2.2em;
     -webkit-transform: rotate(0.5deg);
@@ -214,6 +214,21 @@ html, body{
   100% {
     transform: scale(1);
   }
+}
+.counterRight{
+	position: absolute;
+	font-size: 20em;
+	top: 0;
+	width: 100%;
+	margin-left: 80%;
+	margin-top: 15%;
+}
+.counterCenter{
+	position: absolute;
+	font-size: 20em;
+	top: 0;
+	margin-left: 40%;
+	margin-top: 85%;
 }
 .bottomPanel {
   position: fixed;

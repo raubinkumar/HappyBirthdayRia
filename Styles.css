@@ -34,7 +34,7 @@ html, body{
 
 .downTextHolder{
   position :fixed;
-  width: 88%;
+  width: 88.5%;
   height: 19em;
   padding: 3em;
   background-color: white;
@@ -81,7 +81,7 @@ html, body{
 }
 
 .hiders {
-  margin: -0.1em;
+  margin: -0.01em;
   position: absolute;
   top: 0;
   width: 100%;
